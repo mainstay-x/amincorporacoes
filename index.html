@@ -1,1 +1,140 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>A&amp;M Incorporações</title><style>html,body{height:100%;margin:0}body{display:flex;align-items:center;justify-content:center;background:#0f1b2d;color:#fff;font-family:Arial,Helvetica,sans-serif;text-align:center}h1{font-size:2.4rem;margin:0 0 .5rem}p{font-size:1.1rem;opacity:.75;margin:0}</style></head><body><main><h1>A&amp;M Incorporações</h1><p>Nosso site está chegando. Em breve.</p></main></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Terreno à Chave · A&amp;M Incorporações</title>
+<meta name="description" content="Programa de 6 meses para desenvolver seu empreendimento imobiliário, do terreno à entrega das chaves. MCMV com qualidade e entrega de padrão premium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#131313; --dark2:#1c1c1c; --light:#f1ece6; --muted:#9b948c;
+  --copper:#c4834f; --copper-hi:#e6b083; --copper-lo:#8a4b26;
+  --head:'Lexend','Segoe UI',system-ui,sans-serif;
+  --body:'Inter','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--dark);color:var(--light);font-family:var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.copper{background:linear-gradient(180deg,var(--copper-hi) 0%,var(--copper) 55%,var(--copper-lo) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* dobra única: ocupa a tela inteira */
+.fold{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);position:relative;overflow:hidden}
+.left{display:flex;flex-direction:column;padding:clamp(20px,4vh,40px) clamp(24px,5vw,88px);gap:clamp(14px,2.6vh,28px);position:relative;z-index:2}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:44px;height:38px;fill:#d9d9d9}
+.logo b{display:block;font-family:var(--head);font-size:20px;font-weight:500;letter-spacing:.04em;line-height:1}
+.logo small{display:block;font-size:9.5px;letter-spacing:.32em;color:var(--muted);margin-top:4px}
+.phones{display:flex;gap:18px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.phones a{display:flex;align-items:center;gap:7px;transition:color .2s}
+.phones a:hover{color:var(--copper-hi)}
+.phones svg{width:15px;height:15px;stroke:var(--copper);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.main{margin:auto 0;display:flex;flex-direction:column;gap:clamp(14px,2.4vh,26px);max-width:640px}
+.eyebrow{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--copper-hi);display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--copper)}
+h1{font-family:var(--head);font-weight:300;font-size:clamp(44px,7.4vh,84px);line-height:1.02;letter-spacing:-.01em}
+h1 strong{display:block;font-weight:700}
+.tag{font-family:var(--head);font-size:clamp(17px,2.6vh,24px);font-weight:300;line-height:1.35}
+.tag b{font-weight:600}
+.lead{font-size:clamp(14.5px,2.1vh,18px);line-height:1.6;color:#cfc8c0;max-width:560px;font-weight:300}
+
+.kpis{display:flex;gap:clamp(18px,3vw,44px);flex-wrap:wrap;padding:clamp(10px,1.8vh,18px) 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
+.kpi .v{font-family:var(--head);font-weight:200;font-size:clamp(34px,5.4vh,54px);line-height:1}
+.kpi .l{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.35;max-width:130px}
+
+.list{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.8vh,16px) 28px;list-style:none}
+.list li{display:flex;gap:11px;align-items:flex-start;font-size:clamp(13.5px,1.9vh,15.5px);line-height:1.35;color:#e4ded7}
+.list svg{flex:0 0 18px;width:18px;height:18px;margin-top:1px;stroke:var(--copper);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.cta button{font-family:var(--head);font-weight:500;font-size:17px;letter-spacing:.02em;color:#160c05;background:linear-gradient(180deg,var(--copper-hi),var(--copper));border:0;border-radius:999px;padding:17px 34px;cursor:pointer;box-shadow:0 10px 30px rgba(196,131,79,.35);transition:transform .2s,box-shadow .2s}
+.cta button:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(196,131,79,.5)}
+.cta .alt{font-size:14px;color:var(--muted)}
+.cta .alt a{color:var(--copper-hi);border-bottom:1px solid rgba(230,176,131,.4)}
+
+.disc{font-size:11.5px;line-height:1.5;color:#6f6a64}
+
+/* foto */
+.right{position:relative;min-height:320px}
+.right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.right::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--dark) 0%,rgba(19,19,19,.55) 22%,rgba(19,19,19,0) 55%),linear-gradient(0deg,rgba(19,19,19,.55),rgba(19,19,19,0) 35%)}
+.badge{position:absolute;z-index:2;right:clamp(20px,3vw,48px);bottom:clamp(20px,4vh,44px);background:rgba(19,19,19,.72);backdrop-filter:blur(8px);border:1px solid rgba(196,131,79,.45);border-radius:14px;padding:16px 22px;font-family:var(--head)}
+.badge small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.badge b{display:block;font-size:20px;font-weight:500;margin-top:4px}
+
+@media (max-width:900px){
+  .fold{grid-template-columns:1fr}
+  .left{display:contents}
+  .top{order:0;padding:20px 24px 14px}
+  .right{order:1;min-height:30vh}
+  .right::before{background:linear-gradient(0deg,var(--dark) 0%,rgba(19,19,19,0) 50%)}
+  .main{order:2;padding:8px 24px 0;margin:0;max-width:none}
+  .disc{order:3;padding:20px 24px 28px}
+  .list{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="mark" viewBox="0 0 116 100">
+    <path d="M4 96 L36 8 Q38 3 41 8 L58 40 L44 78 L36 60 L22 96 Z"/>
+    <path d="M112 96 L80 8 Q78 3 75 8 L58 40 L72 78 L80 60 L94 96 Z"/>
+    <path d="M58 58 L74 96 L42 96 Z" opacity=".75"/>
+  </symbol>
+</defs></svg>
+
+<main class="fold">
+  <section class="left">
+    <header class="top">
+      <div class="logo"><svg><use href="#mark"/></svg><div><b>A&amp;M</b><small>INCORPORAÇÕES</small></div></div>
+      <nav class="phones" aria-label="Contato">
+        <a href="https://wa.me/5524999878760" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/></svg>(24) 99987-8760</a>
+        <a href="https://wa.me/5521983710895" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/></svg>(21) 98371-0895</a>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="eyebrow">Programa de acompanhamento · 6 meses</div>
+      <h1>Do Terreno<strong class="copper">à Chave</strong></h1>
+      <p class="tag"><b>MCMV com qualidade.</b> Entrega de padrão premium.</p>
+      <p class="lead">Acompanhamento para desenvolver o seu empreendimento imobiliário: da viabilidade do terreno à entrega das chaves, com decisões validadas antes de a obra começar.</p>
+
+      <div class="kpis">
+        <div class="kpi"><div class="v copper">6</div><div class="l">meses de acompanhamento</div></div>
+        <div class="kpi"><div class="v copper">15</div><div class="l">reuniões ao longo da jornada</div></div>
+        <div class="kpi"><div class="v copper">48h</div><div class="l">prazo máximo de resposta</div></div>
+      </div>
+
+      <ul class="list">
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>3 reuniões individuais focadas no seu projeto</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Tira-dúvidas em grupo a cada 15 dias</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Grupo fechado de WhatsApp durante os 6 meses</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Acesso ao GMSync, seu assistente de gestão</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Kit do incorporador: planilha de viabilidade, checklist e modelo contratual</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Cinco etapas: estrutura, viabilidade, produto, obra e venda</li>
+      </ul>
+
+      <div class="cta">
+        <button formsappId="6ae745130d190bfbb9501fc0">Quero participar</button>
+        <span class="alt">ou chame no <a href="https://wa.me/5524999878760" target="_blank" rel="noopener">WhatsApp</a></span>
+      </div>
+    </div>
+
+    <p class="disc">Orientação educacional e consultiva. Projetos, execução, fiscalização técnica e serviços jurídicos não incluídos. O programa não garante financiamento, venda ou lucro.</p>
+  </section>
+
+  <aside class="right">
+    <img src="assets/acompanhamento-casa.jpg" alt="Fachada de casa moderna ao entardecer, com iluminação e portão em ripas">
+    <div class="badge"><small>Do terreno</small><b>à entrega das chaves</b></div>
+  </aside>
+</main>
+
+<script src="https://cdn.formsapp.io/embed.js" type="text/javascript" async defer onload="new formsapp('6ae745130d190bfbb9501fc0', 'slider', {'overlay':'rgba(45,45,45,0.5)','button':{'color':'#c4834f','text':'Quero participar'},'width':'767px','height':'100vh','align':'right'}, 'https://go.forms.app');"></script>
+</body>
+</html>
